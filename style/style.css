@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  background: url(../img/piotr-skrzynski-gye1IvUaG1E-unsplash.jpg);
+  background-size: cover;
+}
+.app-wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+header input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  transition: 0.2s ease-out;
+  border-radius: 15px 0 15px 0;
+  border-bottom: 2px solid #df8e00;
+}
+header input:focus {
+  border-radius: 0 15px 0 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section .city {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+main section .date {
+  font-size: 16px;
+}
+main .main-temps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-temps span {
+  font-weight: 500;
+}
+main .main-temp {
+  font-size: 120px;
+  font-weight: 800;
+  margin-top: 20px;
+  text-shadow: 3px 15px rgba(0, 0, 0, 0.3);
+}
+main .weather {
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
